@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+
+<!--Load the AJAX API-->
+<!-- <script type="text/javascript" src="/wp-includes/js/jquery/jquery.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"/>
+<!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="./accounting.js"></script>
+<script type="text/javascript" src="./mortgage.js"></script>
+<script type="text/javascript" src="./graph.js"></script>
+<script type="text/javascript" src="./ui.js"></script>
+<script type="text/javascript" src="./init.js"></script>
+
+<script type="text/javascript" src="./jqplot/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.cursor.js"></script>
+<script type="text/javascript" src="./jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./jqplot/jquery.jqplot.min.css"/>
+<link rel="stylesheet" type="text/css" href="./mortgage.css"/>
+
+
+</head>
+
+<body style="width:95%">
+<!--Div that will hold the pie chart-->
+<form name="input" id="input">
+
+
+            <input id="principle" name="principle" type="text" size="7" value="200,000"><label align="right">Loan Amount $</label>
+            <br>  <br>
+
+            <input id="term" name="term" type="text" size="7" value="30"><label align="right">Years</label>
+    <br>    <br>
+
+            <input id="interest" name="interest" type="text" size="7" value="8.5"> <label align="right">Interest Rate %</label>
+
+
+       <!--
+        <tr>
+            <td colspan="2" align="center"><input id="show_schedule" name="show_schedule" type="checkbox">show
+                amortization schedule
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="compute" onclick="display_results();">
+
+            </td>
+        </tr>
+        -->
+
+</form>
+<style type="text/css">
+    .jqplot-target {
+        margin: 30px;
+    }
+
+    #customTooltipDiv {
+        position: absolute;
+        display: none;
+        color: #333333;
+        font-size: 0.8em;
+        border: 1px solid #666666;
+        background-color: rgba(160, 160, 160, 0.2);
+        padding: 2px;
+    }
+</style>
+<div id="summary_div" style="float:left"></div>
+
+<div id="chart_div" style="height: 400px;clear:both;"></div>
+
+<div id="schedule_div" ></div><div id="customTooltipDiv"></div>
+</body>
+</html>

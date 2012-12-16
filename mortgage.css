@@ -1,0 +1,7 @@
+#sliderPrinciple,#sliderYears,#sliderInterest{margin-left:5px;margin-right:5px;float: right;width:250px;margin-top: 7px;;}
+#input label {float:right}
+#principle,#term,#interest{float: right}
+#input {width:426px;float:left;margin:0px;font-size:12px;font-family: Arial;}
+#summary_div {font-size:12px;width:168px}
+#summary_div .google-visualization-table-table {font-size: 10px;margin:0 auto;}
+#link-back{font-size: 8px;font-family: Arial;}
