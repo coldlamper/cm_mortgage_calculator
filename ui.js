@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
             selectYears.val(ui.value);
         },
         change:function (event, ui) {
-            console.log('slide');
+            //console.log('slide');
 
 
             display_results();
@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
         }
     });
     jQuery("#term").change(function () {
-        console.log('change');
+       // console.log('change');
         sliderYears.slider("value", parseInt(this.value, 10));
 
     });
@@ -54,7 +54,7 @@ jQuery(document).ready(function () {
             selectPrinciple.val( accounting.formatNumber( ui.value ) );
         },
         change:function (event, ui) {
-            console.log('slide');
+           // console.log('slide');
 
 
             display_results();
@@ -81,7 +81,7 @@ jQuery(document).ready(function () {
             selectInterest.val(ui.value / 100.00);
         },
         change:function (event, ui) {
-            console.log('slide');
+           // console.log('slide');
 
 
             //alert(ui.value);
